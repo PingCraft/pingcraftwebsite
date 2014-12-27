@@ -1290,6 +1290,18 @@
 				background: #ffffff;
 				color: #000000 !important;
 			}
+	#smbteambanner {
+		background-attachment: scroll,							fixed;
+		background-color: #000000;
+		background-image: url("images/overlay.png"), url("../images/smbteams.png");
+		background-position: top left,						center center;
+		background-repeat: repeat,							no-repeat;
+		background-size: auto,							cover;
+		color: #424242;
+		padding: 12em 0 20em 0;
+		text-align: center;
+	}
+
 
 /* Main */
 

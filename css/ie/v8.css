@@ -1,72 +1,34 @@
 /*
-	Alpha by HTML5 UP
+	Landed by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	pre, code {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
+	body {
+		color: #ffffff;
 	}
 
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
-		line-height: 3em;
+	body, html, #skel-layers-wrapper {
+		height: 100%;
 	}
 
-	input[type="checkbox"],
-	input[type="radio"] {
-		opacity: 1;
-		z-index: auto;
+	blockquote {
+		border-left: solid 4px #606067;
 	}
 
-		input[type="checkbox"] + label:before,
-		input[type="radio"] + label:before {
-			display: none;
-		}
-
-/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
+	code {
+		background: #32333b;
 	}
 
-		input[type="submit"].alt,
-		input[type="reset"].alt,
-		input[type="button"].alt,
-		.button.alt {
-			border: solid 2px #e5e5e5;
-		}
-
-/* Box */
-
-	.box {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
+	hr {
+		border-bottom: solid 1px #606067;
 	}
-
-		.box .image.featured {
-			margin: 2em 0;
-			width: 100%;
-		}
 
 /* Icon */
 
 	.icon.major {
-		position: relative;
 		-ms-behavior: url("css/ie/PIE.htc");
 	}
 
@@ -77,40 +39,131 @@
 		-ms-behavior: url("css/ie/PIE.htc");
 	}
 
+		.image:before {
+			display: none;
+		}
+
 		.image img {
 			position: relative;
 			-ms-behavior: url("css/ie/PIE.htc");
 		}
 
-/* Header */
+/* Form */
 
-	#header nav > ul > li a {
-		color: #fff;
-		display: inline-block;
-		text-decoration: none;
-		border: 0;
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
 	}
 
-		#header nav > ul > li a.icon:before {
-			color: #fff;
-			margin-right: 0.5em;
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			-ms-behavior: url("css/ie/PIE.htc");
 		}
 
-	#header.alt {
-		color: #fff;
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		line-height: 3em;
 	}
 
-		#header.alt nav > ul > li a:not(.button).icon:before {
-			color: rgba(255, 255, 255, 0.75);
+	input[type="checkbox"],
+	input[type="radio"] {
+		font-size: 3em;
+	}
+
+		input[type="checkbox"] + label:before,
+		input[type="radio"] + label:before {
+			display: none;
 		}
 
-		#header.alt nav > ul > li.active a:not(.button) {
-			background-color: rgba(255, 255, 255, 0.2);
+/* Table */
+
+	table tbody tr {
+		border: solid 1px #606067;
+	}
+
+	table thead {
+		border-bottom: solid 1px #606067;
+	}
+
+	table tfoot {
+		border-top: solid 1px #606067;
+	}
+
+	table.alt tbody tr td {
+		border: solid 1px #606067;
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		border: solid 1px #ffffff !important;
+	}
+
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		.button.special {
+			border: 0 !important;
 		}
+
+/* Goto Next */
+
+	.goto-next {
+		display: none;
+	}
+
+/* Spotlight */
+
+	.spotlight {
+		height: 100%;
+	}
+
+		.spotlight .content {
+			background: #272833;
+		}
+
+/* Wrapper */
+
+	.wrapper.style2 input[type="text"]:focus,
+	.wrapper.style2 input[type="password"]:focus,
+	.wrapper.style2 input[type="email"]:focus,
+	.wrapper.style2 select:focus,
+	.wrapper.style2 textarea:focus {
+		border-color: #ffffff;
+	}
+
+	.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
+	.wrapper.style2 input[type="reset"].special:hover,
+	.wrapper.style2 input[type="reset"].special:active,
+	.wrapper.style2 input[type="button"].special:hover,
+	.wrapper.style2 input[type="button"].special:active,
+	.wrapper.style2 .button.special:hover,
+	.wrapper.style2 .button.special:active {
+		color: #e44c65 !important;
+	}
+
+/* Dropotron */
 
 	.dropotron {
-		border: solid 1px #e5e5e5;
+		background: #272833;
+		box-shadow: none !important;
+		-ms-behavior: url("css/ie/PIE.htc");
 	}
+
+		.dropotron > li a, .dropotron > li span {
+			color: #ffffff !important;
+		}
 
 		.dropotron.level-0 {
 			margin-top: 0;
@@ -120,42 +173,22 @@
 				display: none;
 			}
 
+/* Header */
+
+	#header {
+		background: #272833;
+	}
+
 /* Banner */
 
 	#banner {
-		background-attachment: scroll;
-		background-image: url("../../images/banner.jpg");
-		background-position: auto;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-ms-behavior: url("css/ie/backgroundsize.min.htc");
+		height: 100%;
 	}
 
-		#banner input[type="submit"],
-		#banner input[type="reset"],
-		#banner input[type="button"],
-		#banner .button {
-			border: solid 2px #fff;
+		#banner:before {
+			height: 100%;
 		}
 
-/* Main */
-
-	#main {
-		position: relative;
-		z-index: 1;
-	}
-
-/* CTA */
-
-	#cta input[type="text"],
-	#cta input[type="password"],
-	#cta input[type="email"],
-	#cta select,
-	#cta textarea {
-		background: #e89980;
-		border: solid 2px #fff;
-	}
-
-	#cta .formerize-placeholder {
-		color: #fff !important;
-	}
+		#banner:after {
+			background-image: url("images/banner-overlay.png");
+		}

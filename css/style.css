@@ -1010,6 +1010,10 @@
 		z-index: 1;
 	}
 
+    .button.special:hover {
+        color: #FF0000
+    }
+
 		.goto-next:before {
 			background-image: url("images/arrow.svg");
 			background-position: center center;

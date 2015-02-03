@@ -1218,7 +1218,15 @@
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #FFFF00;
+		}
+
+   		.spotlight.style3 .goldteam {
+			border-color: #FFFF00;#39c088
+		}
+
+   		.spotlight.style3 .blueteam {
+			border-color: #0000FF;
 		}
 
 		.spotlight.inactive .content {

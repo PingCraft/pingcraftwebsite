@@ -1039,6 +1039,8 @@
 		height: 100vh;
 		overflow: hidden;
 		position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
 	}
 
 		.spotlight:nth-last-of-type(1) {
@@ -1210,25 +1212,18 @@
 
 		.spotlight.style1 .content {
 			border-color: #e44c65;
-			background-size: cover;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
-			background-size: 50%;
-			background-repeat: no-repeat;
+			border-color: #3B5AA9;
+			background-size: 50% !important;
+			background-repeat: no-repeat !important;
 		}
 
 		.spotlight.style3 .content {
 			border-color: #FFFF00;
-		}
-
-   		.spotlight.style3 .goldteam {
-			border-color: #FFFF00;#39c088
-		}
-
-   		.spotlight.style3 .blueteam {
-			border-color: #0000FF;
+            background-size: 50% !important;
+			background-repeat: no-repeat !important;
 		}
 
 		.spotlight.inactive .content {
